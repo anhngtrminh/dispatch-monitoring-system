@@ -219,9 +219,9 @@ python training/detection/train.py --config training/detection/dataset.yaml --ep
 - Classes: dish, tray
 - Early stopping enabled
 
-### Model Performance
+## Model Performance
 
-#### Detection Model
+### Detection Model
 ![Detection Result](training/detection/result/results.png)
 **Final Epoch:** `20`  
 **Best Validation mAP@0.5:** `0.99177`  
@@ -245,7 +245,7 @@ python training/detection/train.py --config training/detection/dataset.yaml --ep
 
 ---
 
-#### Classification Models
+### Classification Models
 **Dish Classifier**:
 
 **Best Validation Accuracy:** `0.9874` (**98.74%**)
