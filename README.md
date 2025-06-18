@@ -231,8 +231,10 @@ python training/detection/train.py --config training/detection/dataset.yaml --ep
 
 #### Classification Models
 **Dish Classifier**:
-Best Validation Accuracy: 0.9874 (98.74%)
 
+**Best Validation Accuracy:** `0.9874` (**98.74%**)
+
+```
 Classification Report for TRAY:
               precision    recall  f1-score   support
 
@@ -243,6 +245,7 @@ Classification Report for TRAY:
     accuracy                         0.9874       239
    macro avg     0.9871    0.9886    0.9877       239
 weighted avg     0.9876    0.9874    0.9875       239
+```
 
 **Tray Classifier** (92.8% accuracy):
 - Empty: Precision 0.94, Recall 0.91
