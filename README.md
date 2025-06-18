@@ -223,11 +223,27 @@ python training/detection/train.py --config training/detection/dataset.yaml --ep
 
 #### Detection Model
 ![Detection Result](training/detection/result/results.png)
-- **mAP@0.5**: 0.87
-- **mAP@0.5:0.95**: 0.64
-- **Precision**: 0.89 (dishes), 0.91 (trays)
-- **Recall**: 0.85 (dishes), 0.88 (trays)
-- **Speed**: ~45 FPS (RTX 3080), ~15 FPS (CPU)
+**Final Epoch:** `20`  
+**Best Validation mAP@0.5:** `0.99177`  
+**Best Validation mAP@0.5:0.95:** `0.90814`  
+**Final Validation Losses:**  
+- Box Loss: `0.4332`  
+- Class Loss: `0.3120`  
+- DFL Loss: `0.9031`  
+
+---
+
+#### 🔢 Epoch Progression (Key Metrics)
+
+| Epoch | Precision | Recall | mAP@0.5 | mAP@0.5:0.95 | Val Box Loss | Val mAP@0.5 |
+|-------|-----------|--------|---------|--------------|---------------|-------------|
+| 1     | 0.9572    | 0.6329 | 0.8971  | 0.7154       | 0.7640        | 0.8971      |
+| 5     | 0.8375    | 0.8811 | 0.9412  | 0.7783       | 0.6824        | 0.9412      |
+| 10    | 0.9809    | 0.9738 | 0.9839  | 0.8497       | 0.5398        | 0.9839      |
+| 15    | 0.9925    | 0.9789 | 0.9868  | 0.8881       | 0.4723        | 0.9868      |
+| 20    | 0.9913    | 0.9896 | 0.9918  | 0.9081       | 0.4520        | 0.9918      |
+
+---
 
 #### Classification Models
 **Dish Classifier**:
