@@ -1,0 +1,7 @@
+old_crafts/
+feedback/
+runs/
+data/
+AU/
+models/*
+!models/.keep

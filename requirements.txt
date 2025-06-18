@@ -1,0 +1,11 @@
+ultralytics
+torch
+torchvision
+opencv-python
+streamlit
+pillow
+seaborn
+numpy
+scikit-learn
+matplotlib
+gdown

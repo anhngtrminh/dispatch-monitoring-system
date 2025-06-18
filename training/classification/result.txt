@@ -1,0 +1,141 @@
+Training both classifiers with default parameters...
+
+==================================================
+Training TRAY classifier on cpu
+==================================================
+Dataset classes: ['empty', 'kakigori', 'not_empty']
+Number of classes: 3
+Training samples: 960
+Validation samples: 239
+C:\Users\DELL\miniconda3\envs\dispatch\lib\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+C:\Users\DELL\miniconda3\envs\dispatch\lib\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=EfficientNet_B0_Weights.IMAGENET1K_V1`. You can also use `weights=EfficientNet_B0_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Epoch 1/5
+  Train Loss: 0.3770
+  Val Loss: 0.1291
+  Val Accuracy: 0.9623 (96.23%)
+  Learning Rate: 0.001000
+  *** New best model saved! Accuracy: 0.9623
+------------------------------
+Epoch 2/5
+  Train Loss: 0.1435
+  Val Loss: 0.1243
+  Val Accuracy: 0.9582 (95.82%)
+  Learning Rate: 0.001000
+------------------------------
+Epoch 3/5
+  Train Loss: 0.1157
+  Val Loss: 0.0650
+  Val Accuracy: 0.9791 (97.91%)
+  Learning Rate: 0.000100
+  *** New best model saved! Accuracy: 0.9791
+------------------------------
+Epoch 4/5
+  Train Loss: 0.0367
+  Val Loss: 0.0577
+  Val Accuracy: 0.9833 (98.33%)
+  Learning Rate: 0.000100
+  *** New best model saved! Accuracy: 0.9833
+------------------------------
+Epoch 5/5
+  Train Loss: 0.0365
+  Val Loss: 0.0506
+  Val Accuracy: 0.9874 (98.74%)
+  Learning Rate: 0.000100
+  *** New best model saved! Accuracy: 0.9874
+------------------------------
+
+Final Results for TRAY:
+Best Validation Accuracy: 0.9874 (98.74%)
+
+Classification Report for TRAY:
+              precision    recall  f1-score   support
+
+       empty     1.0000    0.9865    0.9932        74
+    kakigori     0.9718    1.0000    0.9857        69
+   not_empty     0.9895    0.9792    0.9843        96
+
+    accuracy                         0.9874       239
+   macro avg     0.9871    0.9886    0.9877       239
+weighted avg     0.9876    0.9874    0.9875       239
+
+
+Final model saved to: models/tray_classifier.pt
+Best model saved to: models/tray_classifier_best.pt
+
+==================================================
+Training DISH classifier on cpu
+==================================================
+Dataset classes: ['empty', 'kakigori', 'not_empty']
+Number of classes: 3
+Training samples: 1372
+Validation samples: 343
+C:\Users\DELL\miniconda3\envs\dispatch\lib\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+C:\Users\DELL\miniconda3\envs\dispatch\lib\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=EfficientNet_B0_Weights.IMAGENET1K_V1`. You can also use `weights=EfficientNet_B0_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Epoch 1/5
+  Train Loss: 0.3107
+  Val Loss: 0.1687
+  Val Accuracy: 0.9534 (95.34%)
+  Learning Rate: 0.001000
+  *** New best model saved! Accuracy: 0.9534
+------------------------------
+Epoch 2/5
+  Train Loss: 0.1348
+  Val Loss: 0.2186
+  Val Accuracy: 0.9242 (92.42%)
+  Learning Rate: 0.001000
+------------------------------
+Epoch 3/5
+  Train Loss: 0.1218
+  Val Loss: 0.1287
+  Val Accuracy: 0.9621 (96.21%)
+  Learning Rate: 0.000100
+  *** New best model saved! Accuracy: 0.9621
+------------------------------
+Epoch 4/5
+  Train Loss: 0.0667
+  Val Loss: 0.1203
+  Val Accuracy: 0.9650 (96.50%)
+  Learning Rate: 0.000100
+  *** New best model saved! Accuracy: 0.9650
+------------------------------
+Epoch 5/5
+  Train Loss: 0.0544
+  Val Loss: 0.1174
+  Val Accuracy: 0.9592 (95.92%)
+  Learning Rate: 0.000100
+------------------------------
+
+Final Results for DISH:
+Best Validation Accuracy: 0.9650 (96.50%)
+
+Classification Report for DISH:
+              precision    recall  f1-score   support
+
+       empty     1.0000    0.9688    0.9841       160
+    kakigori     0.9318    0.9880    0.9591        83
+   not_empty     0.9400    0.9400    0.9400       100
+
+    accuracy                         0.9650       343
+   macro avg     0.9573    0.9656    0.9611       343
+weighted avg     0.9660    0.9650    0.9652       343
+
+
+Final model saved to: models/dish_classifier.pt
+Best model saved to: models/dish_classifier_best.pt
+
+============================================================
+TRAINING SUMMARY
+============================================================
+TRAY Classifier:
+  Classes: ['empty', 'kakigori', 'not_empty']
+  Final Accuracy: 0.9874 (98.74%)
+  Best Accuracy: 0.9874 (98.74%)
+
+DISH Classifier:
+  Classes: ['empty', 'kakigori', 'not_empty']
+  Final Accuracy: 0.9650 (96.50%)
+  Best Accuracy: 0.9650 (96.50%)

@@ -1,0 +1,10 @@
+version: '3'
+services:
+  app:
+    build: .
+    ports:
+      - "8501:8501"
+    volumes:
+    - ./models:/app/models          # Allow model loading and saving
+    - ./feedback:/app/feedback      # Store user corrections
+    - ./data:/app/data              # Access training/inference inputs

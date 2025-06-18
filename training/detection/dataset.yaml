@@ -1,0 +1,8 @@
+train: ../../AU/Dataset/Detection/train/images 
+val: ../../AU/Dataset/Detection/val/images
+
+names:
+  0: dish
+  1: tray
+
+nc: 2
