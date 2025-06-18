@@ -222,6 +222,7 @@ python training/detection/train.py --config training/detection/dataset.yaml --ep
 ### Model Performance
 
 #### Detection Model
+![Detection Result](training/detection/result/results.png)
 - **mAP@0.5**: 0.87
 - **mAP@0.5:0.95**: 0.64
 - **Precision**: 0.89 (dishes), 0.91 (trays)
@@ -246,7 +247,7 @@ Classification Report for TRAY:
 weighted avg     0.9876    0.9874    0.9875       239
 ```
 
-**Tray Classifier** (92.8% accuracy):
+**Tray Classifier**:
 
 **Best Validation Accuracy:** `0.9650` (**96.50%**)
 
