@@ -38,9 +38,9 @@ def load_pipeline():
     """Load the detection pipeline (cached to avoid reloading)"""
     try:
         pipeline = DetectionClassificationPipeline(
-            yolo_model_path=YOLO_MODEL_PATH,
-            dish_model_path=DISH_MODEL_PATH,
-            tray_model_path=TRAY_MODEL_PATH,
+            yolo_path=YOLO_MODEL_PATH,
+            dish_path=DISH_MODEL_PATH,
+            tray_path=TRAY_MODEL_PATH,
             device='auto'
         )
         return pipeline

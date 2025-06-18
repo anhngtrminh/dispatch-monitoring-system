@@ -10,7 +10,7 @@ import argparse
 from pathlib import Path
 import glob
 
-class DetectionPipeline:
+class DetectionClassificationPipeline:
     def __init__(self, yolo_path, dish_path, tray_path, device='auto'):
         # Set device
         self.device = 'cuda' if torch.cuda.is_available() and device != 'cpu' else 'cpu'
@@ -190,14 +190,14 @@ class DetectionPipeline:
         
         return detections
     
-    def process_frame(self, frame, conf_thresh=0.5, use_sliding_window=True, enhance_mode='auto'):
+    def process_frame(self, frame, conf_threshold=0.5, use_sliding_window=True, enhancement_mode='auto'):
         original = frame.copy()
         
         # Preprocess
-        enhanced, scale_x, scale_y = self.preprocess_image(frame, enhance_mode)
+        enhanced, scale_x, scale_y = self.preprocess_image(frame, enhancement_mode)
         
         # Detect objects
-        detections = self.detect_objects(enhanced, conf_thresh, use_sliding_window)
+        detections = self.detect_objects(enhanced, conf_threshold, use_sliding_window)
         
         # Scale back to original coordinates
         if scale_x != 1.0 or scale_y != 1.0:
@@ -366,7 +366,7 @@ def main():
     
     # Initialize pipeline
     try:
-        pipeline = DetectionPipeline(args.yolo_model, args.dish_model, args.tray_model, args.device)
+        pipeline = DetectionClassificationPipeline(args.yolo_model, args.dish_model, args.tray_model, args.device)
     except Exception as e:
         print(f"Failed to initialize: {e}")
         return 1
