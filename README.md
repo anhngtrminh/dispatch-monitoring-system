@@ -31,7 +31,7 @@ dispatch-monitoring-system/
 │   ├── classification/     # EfficientNet-B1 training
 │   └── detection/          # YOLOv8 training
 ├── models/                 # Model weights storage
-├── data/                   # Processed training data
+├── data/                   # Processed feedback data
 ├── feedback/               # User feedback for retraining
 ├── test/                   # Test assets and validation
 └── setup/                  # Model download utilities
