@@ -1,0 +1,17 @@
+{
+  "object_id": "ce3b7600-5cb7-4f20-95ca-5398e08103be",
+  "timestamp": "2025-06-17T03:17:48.325007",
+  "original_image": "8.png",
+  "bbox": [
+    678,
+    167,
+    721,
+    210
+  ],
+  "original_type": "dish",
+  "original_status": "not_empty",
+  "original_confidence": 0.9974773526191711,
+  "corrected_type": "dish",
+  "corrected_state": "kakigori",
+  "crop_path": "feedback/crops\\ce3b7600-5cb7-4f20-95ca-5398e08103be.jpg"
+}

@@ -1,0 +1,17 @@
+{
+  "object_id": "9c024588-8a87-4f24-ac55-a30b4c75c998",
+  "timestamp": "2025-06-17T02:57:46.075356",
+  "original_image": "8.png",
+  "bbox": [
+    49,
+    125,
+    92,
+    172
+  ],
+  "original_type": "tray",
+  "original_status": "empty",
+  "original_confidence": 0.8470282554626465,
+  "corrected_type": "unknown",
+  "corrected_state": "empty",
+  "crop_path": "feedback/crops\\9c024588-8a87-4f24-ac55-a30b4c75c998.jpg"
+}

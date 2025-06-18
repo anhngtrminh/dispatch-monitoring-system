@@ -1,0 +1,17 @@
+{
+  "object_id": "5600e499-14d3-431a-8ca3-006790a70bb5",
+  "timestamp": "2025-06-18T00:59:11.226041",
+  "original_image": "7.png",
+  "bbox": [
+    622,
+    64,
+    661,
+    105
+  ],
+  "original_type": "dish",
+  "original_status": "not_empty",
+  "original_confidence": 0.9993461966514587,
+  "corrected_type": "dish",
+  "corrected_state": "kakigori",
+  "crop_path": "feedback/crops\\5600e499-14d3-431a-8ca3-006790a70bb5.jpg"
+}

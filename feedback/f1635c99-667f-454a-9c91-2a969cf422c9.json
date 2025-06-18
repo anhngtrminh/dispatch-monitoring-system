@@ -1,0 +1,17 @@
+{
+  "object_id": "f1635c99-667f-454a-9c91-2a969cf422c9",
+  "timestamp": "2025-06-17T03:19:39.100445",
+  "original_image": "19.png",
+  "bbox": [
+    602,
+    249,
+    636,
+    269
+  ],
+  "original_type": "dish",
+  "original_status": "empty",
+  "original_confidence": 0.8434860706329346,
+  "corrected_type": "unknown",
+  "corrected_state": "empty",
+  "crop_path": "feedback/crops\\f1635c99-667f-454a-9c91-2a969cf422c9.jpg"
+}
