@@ -222,6 +222,7 @@ python training/detection/train.py --config training/detection/dataset.yaml --ep
 ### Model Performance
 
 #### Detection Model
+![Alt text](training\detection\result\results.png)
 - **mAP@0.5**: 0.87
 - **mAP@0.5:0.95**: 0.64
 - **Precision**: 0.89 (dishes), 0.91 (trays)
@@ -229,10 +230,19 @@ python training/detection/train.py --config training/detection/dataset.yaml --ep
 - **Speed**: ~45 FPS (RTX 3080), ~15 FPS (CPU)
 
 #### Classification Models
-**Dish Classifier** (94.2% accuracy):
-- Empty: Precision 0.96, Recall 0.95
-- Kakigori: Precision 0.91, Recall 0.93
-- Not_empty: Precision 0.95, Recall 0.94
+**Dish Classifier**:
+Best Validation Accuracy: 0.9874 (98.74%)
+
+Classification Report for TRAY:
+              precision    recall  f1-score   support
+
+       empty     1.0000    0.9865    0.9932        74
+    kakigori     0.9718    1.0000    0.9857        69
+   not_empty     0.9895    0.9792    0.9843        96
+
+    accuracy                         0.9874       239
+   macro avg     0.9871    0.9886    0.9877       239
+weighted avg     0.9876    0.9874    0.9875       239
 
 **Tray Classifier** (92.8% accuracy):
 - Empty: Precision 0.94, Recall 0.91
