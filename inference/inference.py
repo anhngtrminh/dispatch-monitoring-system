@@ -373,9 +373,9 @@ def main():
     
     # Process parameters
     process_kwargs = {
-        'conf_thresh': args.conf,
+        'conf_threshold': args.conf,
         'use_sliding_window': not args.no_sliding_window,
-        'enhance_mode': args.enhance
+        'enhancement_mode': args.enhance
     }
     
     # Process files
